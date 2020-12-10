@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SCH DB Management | SCH</title>
+</head>
+
+<body>
+    <nav class="main-navigation">
+        <!-- <div class="flex-container"> -->
+        <div class="menu-nav">
+            <div class="menu-button">
+                <label for="click">
+                    <div class="menu-bar">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                </label>
+            </div>
+            <ul class="menu-nav-list">
+                <li class="menu-nav-list-items"><a href="#" class="menu-nav-link">SCH Database Management</a></li>
+                <!-- <li class="menu-nav-list-items"><a href="#">Atomic Deployment</a></li>
+                <li class="menu-nav-list-items"><a href="#">Teams</a></li>
+                <li class="menu-nav-list-items"><a href="#">Backup</a></li>
+                <li class="menu-nav-list-items"><a href="#">DNS Manager</a></li> -->
+            </ul>
+        </div>
+        <div class="icon-nav">
+            <ul class="icon-nav-list">
+                <!-- <li class="icon-nav-list-items"><i class="fa fa-bell"></i></li> -->
+                <li class="icon-nav-list-items"><a href="">[user]</a></i>
+                </li>
+                <!--<li class="icon-nav-list-items"><i class="fa fa-cog"></i></li> -->
+                <li class="icon-nav-list-items"><i class="fa fa-user-circle"></i></li>
+                <!-- <li class="icon-nav-list-items"><i class="fa fa-chevron-down"></i></li> -->
+            </ul>
+        </div>
+        <!-- </div> -->
+    </nav>
+    <input type="checkbox" class="checkbox" id="click" hidden>
+    <nav class="sidebar-nav">
+        <ul class="sidebar-nav-list">
+            <li class="sidebar-nav-list-items"><i class="fa fa-list"></i><a href="index.html" class="sidebar-nav-link">Summary</a></li>
+            <li class="sidebar-nav-list-items"><i class="fa fa-user"></i><a href="vendor.html" class="sidebar-nav-link">Vendor</a></li>
+            <li class="sidebar-nav-list-items"><i class="fa fa-exclamation-triangle"></i><a href="#" class="sidebar-nav-link">Alerts</a></li>
+            <li class="sidebar-nav-list-items"><i class="fa fa-file"></i><a href="#" class="sidebar-nav-link">Certificates</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="flex-container">
+                <section class="table-list-section">
+                    <div class="table-list-section-heading">
+                        <h2 class="heading-table-list">Backup Summary</h3>
+                    </div>
+                    <div class="table-list-section-sub-heading">
+                        <h4>Files</h4>
+                        <p>If you have deleted a backup instance, any backup files under it will no longer be bound to any backup instance. Thus, it will be archived. You can still restore or delete archive backup files as standard backup files.</p>
+                    </div>
+                    <div class="section-table">
+                        <table class="table">
+                            <thead class="table-head">
+                                <tr>
+                                    <th class="table-head-lable">File Name</th>
+                                    <th>Status</th>
+                                    <th>Size</th>
+                                    <th>Deletion Date</th>
+                                    <th>Restore</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody class="database-tbody">
+                                <tr>
+                                    <td>sample-database-05-11-20202.tar.gz</td>
+                                    <td><button class="status">Completed</button> </td>
+                                    <td>233.5kb</td>
+                                    <td>26-11-2020</td>
+                                    <td><button class="restore"><i class="fas fa-retweet"></i></button></td>
+                                    <td><button class="delete"><i class="fas fa-trash-alt"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>sample-database-05-11-20202.tar.gz</td>
+                                    <td><button class="status">Completed</button> </td>
+                                    <td>233.5kb</td>
+                                    <td>26-11-2020</td>
+                                    <td><button class="restore"><i class="fas fa-retweet"></i></button></td>
+                                    <td><button class="delete"><i class="fas fa-trash-alt"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>sample-database-05-11-20202.tar.gz</td>
+                                    <td><button class="status">Completed</button> </td>
+                                    <td>233.5kb</td>
+                                    <td>26-11-2020</td>
+                                    <td><button class="restore"><i class="fas fa-retweet"></i></button></td>
+                                    <td><button class="delete"><i class="fas fa-trash-alt"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>sample-database-05-11-20202.tar.gz</td>
+                                    <td><button class="status">Completed</button> </td>
+                                    <td>233.5kb</td>
+                                    <td>26-11-2020</td>
+                                    <td><button class="restore"><i class="fas fa-retweet"></i></button></td>
+                                    <td><button class="delete"><i class="fas fa-trash-alt"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+            </div>
+
+        </div>
+    </header>
+</body>
+
+</html>
